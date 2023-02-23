@@ -23,9 +23,12 @@ def get_calendar_service():
         else:
             flow = InstalledAppFlow.from_client_secrets_file(CREDENTIALS_FILE, SCOPES)
             creds = flow.run_local_server(port=35665)
-
+            
         with open(TOKENS_FILE, "wb") as token:
             pickle.dump(creds, token)
-
+            
+        with open('/home/google/task/token.json', 'w') as token:
+            token.write(creds.to_json())
     service = build("calendar", "v3", credentials=creds)
+    print(service)
     return service

@@ -53,8 +53,6 @@ UPDATE_FUNC_ARGUMENT = dict(
 )
 
 DELETE_FUNC_ARGUMENT = dict(calendarId="primary", eventId=None, sendNotifications=None, sendUpdates=None)
-from datetime import datetime , timedelta
-
 
 class CalendarControl:
     def __init__(self):

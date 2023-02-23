@@ -1,25 +1,30 @@
 # Google Calendar API
 
 ## 1. Intorduce
+- 캘린더의 기능을 조작해보기 위해 Google Open API를 사용하기로 했다. 
+- 기능으로 다음과 같이 구현하였다. 
+<br></br>
 
-### 1. 나의 캘린더
+## 2. Function
+- 2-1. 조회
+    - 이름/날짜 중 선택할 수 있다.
 
-    1-1. 캘린더 조회
+- 2-2. 등록
+    - 풀타임/파트타임 중 선택할 수 있다.
 
-    1-2. 이름, 날짜 중 선택 (이름 or 날짜 만 입력)
+- 2-3. 삭제
 
-    2-1. 캘린더 등록
+- 2-4. 수정
+    - 이름/시작시간/종료시간/이벤트내용 중 선택할 수 있다.
+<br></br>
 
-    2-2. 종일, 시간 중 선택 (종일 or 시간 만 입력)
+## 3. Used
+> conda env create -f 'google_cal.yaml'
 
-    3-1. 캘린더 삭제
+> pip install -r requirements.txt
 
-    4-1. 캘린더 수정
-
-    4-2. 이벤트 이름, 시작 시간, 종료 시간, 이벤트 내용
-
-### 2.회의실 캘린더
-
-### 3. 연차/반차 사용 캘린더
-
-### 4. 추가 사용 캘린더
+<br></br>
+## 4. Reference
+- [Google Calendar](https://developers.google.com/apps-script/reference/calendar/calendar?hl=ko)
+- [Google Auth Setting](https://accounts.google.com/v3/signin/identifier?dsh=S1494126451%3A1676515166615165&continue=https%3A%2F%2Fconsole.cloud.google.com%2F&followup=https%3A%2F%2Fconsole.cloud.google.com%2F&osid=1&passive=1209600&service=cloudconsole&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AWnogHdSaedEpVs88S0R65OA0-8Ftht_OuKTsts0VS580YhSJmq5QO69dOr9OvIEBM-NU79xKHVuQQ)
+- [ADD](https://developers.google.com/workspace/guides/get-started?hl=ko)
